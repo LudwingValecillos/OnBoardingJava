@@ -112,6 +112,7 @@ public class Main {
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
         int opcion;
+
         do {
             System.out.println("Que desea hacer con los numeros? " + num1 + " y " + num2 + "\n" +
                     "1. Sumar\n" +
@@ -197,13 +198,17 @@ public class Main {
 
                             System.out.println("Tiene el boleto? 'si' o 'no' ");
                             sc = new Scanner(System.in);
+
                             if (sc.nextLine().toLowerCase().equals("si")) {
+
                                 System.out.println("Ingrese el tipo de voleto; 'VIP' o 'normal'");
                                 voleto = sc.nextLine().toLowerCase(Locale.ROOT);
+
                                 while (!voleto.equals("vip") && !voleto.equals("normal")) {
                                     System.out.println("Ingrese un voleto valido; 'VIP' o 'normal'");
                                     voleto = sc.nextLine().toLowerCase(Locale.ROOT);
                                 }
+
                                 if (voleto.equals("vip")) {
                                     capacidad++;
                                     dineroRecaudado += 2000;
@@ -217,7 +222,7 @@ public class Main {
                             } else {
                                 System.out.println("Ingrese el dinero disponible");
                                 int dinero = sc.nextInt();
-                               if (dinero >= 1500) {
+                                if (dinero >= 1500) {
                                     System.out.println("vip o normal?");
                                     sc = new Scanner(System.in);
                                     voleto = sc.nextLine().toLowerCase(Locale.ROOT);
@@ -248,7 +253,7 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println( "Capacidad disponoble ----------- " + ( 500  -capacidad));
+                    System.out.println("Capacidad disponoble ----------- " + (500 - capacidad));
                     break;
 
                 case 3:
