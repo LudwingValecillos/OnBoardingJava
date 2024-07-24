@@ -20,7 +20,7 @@ public class Main {
 //        System.out.println("Nombre: " + name + ". apellido: " + apellido + ", edad: " + edad);
 
         //2
-        bienvenida();
+//        bienvenida();
 
         //3
 //        System.out.println("Ingrese tres numeros");
@@ -56,7 +56,7 @@ public class Main {
 //        System.out.println(primo(sc.nextInt()));
 
         //7
-        int[] array = {1, 5, 6, 8, 7, 9, 2, 3, 6, 4, 1, 2, 3, 9, 8, 10, 2, 5, 6};
+//        int[] array = {1, 5, 6, 8, 7, 9, 2, 3, 6, 4, 1, 2, 3, 9, 8, 10, 2, 5, 6};
 //        System.out.println(sumaImpares(array));
 
         //8
@@ -65,7 +65,7 @@ public class Main {
         //9 y //10
 //        menuCalculadora();
 
-        //11
+        //11 y \\12
 
         bolero();
 
