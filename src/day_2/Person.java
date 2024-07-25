@@ -80,6 +80,17 @@ public class Person {
         this.petsNames = petsNames;
     }
 
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", identityCard='" + identityCard + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                ", married=" + (married ? "Estoy casado/a" : "No estoy casado/a") +
+                ", petsNames=" + Arrays.toString(petsNames) +
+                '}';
+    }
 }
 

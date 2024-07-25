@@ -13,21 +13,21 @@ public class Main {
 
         System.out.println("-----------------------------------------------");
         Person pablo = new Person("pablo","perez", "959318sd7" , 15, 1.71, true, mascotas );
-        presentar(pablo);
+        System.out.println(pablo.toString());
+
+//        pablo.toString();
+//        presentar(pablo);
     }
 
     public static void presentar(Person p){
-        String casado;
-        if(p.isMarried()){
-            casado = "Estoy casado/a";
-        }else casado = "No estoy casado/a";
+
+//        String casado =  p.isMarried() ? "Estoy casado/a" : "No estoy casado/a";
 
         System.out.println(" Presentacion de " + p.getFirstName() +": \n"
         + "¡Hola! Mi nombre es " + p.getFirstName() + " " + p.getLastName() +"\n"
         + "Tengo " + p.getAge() + " y mido " + p.getHeight() + " metros de altura" + "\n"
-        + casado + "\n"
+        + ( p.isMarried() ? "Estoy casado/a" : "No estoy casado/a") + "\n"
         + "Mi DNI es " + p.getIdentityCard() + "\n"
         + (Arrays.toString(p.getPetsNames())));
-
     }
 }
