@@ -8,9 +8,7 @@ public class Person {
     private double height;
 
     private boolean married;
-
     private String[] petsNames;
-
     public Person() {
     }
 
