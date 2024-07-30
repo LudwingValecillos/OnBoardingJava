@@ -16,8 +16,6 @@ public class Main {
         mascotas.add(yummi);
 
 
-
-
         Person ludwing = new Person("Ludwing","Valecillos","95931847",24, 1.70,false, mascotas);
         ludwing.addPet(camila);
         ludwing.presentar();

@@ -3,7 +3,6 @@ package day_3;
 public class Pet {
     private String name;
     private PetType petType;
-
     private int ege;
     private Person owner;
 

@@ -33,7 +33,8 @@ public class CalculatorWithMenu implements CalculatorMenu {
 
     @Override
     public void ejecutarOperacion(double num1 , double num2) {
-
+        Scanner sc = new Scanner(System.in);
+        this.opcion = sc.nextInt();
         switch (this.opcion){
             case 1:
                 System.out.println(this.operations.addition(num1,num2));

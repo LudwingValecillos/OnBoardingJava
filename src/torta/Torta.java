@@ -16,6 +16,7 @@ public class Torta implements Preparacion {
 
     private double precio;
 
+    private Cliente cliente;
     public Torta() {
     }
 
